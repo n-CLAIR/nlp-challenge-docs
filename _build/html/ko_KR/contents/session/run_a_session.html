@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ko" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ko" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Run a session &mdash; NSML  documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Access to a session for repl" href="access_to_a_session_for_repl.html" />
+    <link rel="prev" title="Prepare a session environment" href="prepare_a_session_environment.html" /> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> NSML
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting_started.html">Getting started</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dataset/dataset.html">Dataset</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../session.html">Session</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="prepare_a_session_environment.html">Prepare a session environment</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Run a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="access_to_a_session_for_repl.html">Access to a session for repl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="change_a_session_memo.html">Change a session memo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="check_a_session_status.html">Check a session status</a></li>
+<li class="toctree-l2"><a class="reference internal" href="delete_a_model.html">Delete a model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="delete_a_session.html">Delete a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="download_a_session_data.html">Download a session data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="fork_a_session.html">Fork a session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_a_log_from_session.html">Get a log from session</a></li>
+<li class="toctree-l2"><a class="reference internal" href="get_a_session_command.html">Get a session command</a></li>
+<li class="toctree-l2"><a class="reference internal" href="list_models.html">list models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pull_models.html">Pull models</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pull_sessions.html">Pull sessions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="submit_a_session.html">Submit a session</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../nsml_library/nsml_library.html">NSML library</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../leaderboard.html">Leaderboard</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../web_interface/web_interface.html">Web interface</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Appendix.html">Appendix</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">NSML</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../session.html">Session</a> &raquo;</li>
+        
+      <li>Run a session</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/contents/session/run_a_session.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="run-a-session">
+<span id="nsml-run"></span><h1>Run a session<a class="headerlink" href="#run-a-session" title="제목 주소">¶</a></h1>
+<blockquote>
+<div><dl class="docutils">
+<dt>Usage:</dt>
+<dd><div class="first highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml run [Options]</span>
+</pre></div>
+</div>
+<p class="last">현재 위치의 파일들을 NSML server 로 보내 세션을 실행시킵니다. 현재 위치의 main.py 를 entry 파일로 인식해서 실행시키고, entry 파일이 없으면 에러가 발생합니다.
+-e 옵션으로 entry 파일을 바꿀 수 있습니다.</p>
+</dd>
+<dt>Example:</dt>
+<dd><div class="first highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml run -d NER</span>
+</pre></div>
+</div>
+<p class="last">해당되는 competition에 따라 -d 옵션을 설정하여 dataset을 꼭 지정해주셔야 합니다.(-d NER, -d SRL)</p>
+</dd>
+<dt>Options:</dt>
+<dd><dl class="first attribute">
+<dt>
+<code class="descname">-d, --dataset</code></dt>
+<dd><p>세션이 실행될 때 사용할 dataset 을 선택합니다. string 타입으로 지정합니다.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">-g, --gpus</code></dt>
+<dd><p>할당받을 gpu 의 갯수를 입력합니다. ex) nsml run -g 4</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">-i, --interactive</code></dt>
+<dd><p>interactive 모드로 세션을 실행하면, 세션의 훈련이 다 끝난 뒤에 세션은 자동으로 삭제됩니다.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">-m, --memo</code></dt>
+<dd><p>세션에 간단한 memo 를 입력할 수 있습니다. string 타입으로 지정합니다. ex) nsml run -m 'LSTM'</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">-e, --entry</code></dt>
+<dd><p>세션이 실행될 때의 main entry 파일을 설정합니다. ex) nsml run -e lstm.py</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">-a, --args</code></dt>
+<dd><p>main entry 파일의 arguments 를 전달합니다. string 타입으로 지정합니다. ex) nsml run -a &quot;--batch=1000, --lr=0.02&quot;</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">-c, --cpus</code></dt>
+<dd><p>사용할 cpu 갯수입니다. ex) nsml run -c 5</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">--memory</code></dt>
+<dd><p>필요한 CPU memory 사이즈입니다. (default '24G')</p>
+</dd></dl>
+
+<dl class="last attribute">
+<dt>
+<code class="descname">--shm-size</code></dt>
+<dd><p>필요한 share memory 사이즈 입니다. (default '1G')</p>
+</dd></dl>
+
+</dd>
+</dl>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="access_to_a_session_for_repl.html" class="btn btn-neutral float-right" title="Access to a session for repl" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="prepare_a_session_environment.html" class="btn btn-neutral" title="Prepare a session environment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, NAVER
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/translations.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
