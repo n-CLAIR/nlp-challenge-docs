@@ -9,8 +9,9 @@ Sign-up
 
     .. note:: Github 계정과 Team 이름은 다음과 같은 규칙을 만족해야 합니다.
 
-        - Github 아이디는 **5자리 이상** 으로 지정해야 합니다.
+        - Github username은 **5자리 이상** 으로 지정해야 합니다.
         - Team 이름은 **대/소문자 영어 5~20자리, 특수문자는 “_” 만** 사용하여 지정해야 합니다.
+        - Team 이름과 동일한 Github username이 없어야 합니다. 모두 **다르게** 지정해야 합니다.
 
     .. note:: **Github에서 Two-factor authentication을 해제해야 사용 가능합니다.**
 
