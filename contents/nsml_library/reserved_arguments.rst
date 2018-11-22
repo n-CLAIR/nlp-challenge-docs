@@ -17,6 +17,6 @@ reserved arguments
 
         model 을 load 할때 1로 설정됩니다.
 
-    .. py:attribute:: --checkpoint TEXT
+    .. py:attribute:: --iteration TEXT
 
-        :ref:`nsml fork<nsml fork>` 할때의 체크포인트로 설정됩니다. 체크포인트 옵션을 안주면 마지막 wall time 의 model 을 가져옵니다.
+        :ref:`nsml fork<nsml fork>` 할 때의 iteration로 설정됩니다. 이는 checkpoint와 동일한 개념입니다. iteration 옵션을 주지 않으면 마지막 wall time 의 model 을 가져옵니다.
