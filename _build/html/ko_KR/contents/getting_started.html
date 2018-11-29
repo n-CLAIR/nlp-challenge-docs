@@ -84,6 +84,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#install-nsml">Install nsml</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#install-local-nsml">Install local-nsml</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#login">Login</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#path-registration">Path registration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#run-a-session">Run a session</a></li>
 </ul>
 </li>
@@ -228,6 +229,29 @@ Github 아이디와 비밀번호로 로그인합니다. 아래 소스 코드에�
 <span class="go">INFO[2018/11/19 12:33:42.355] Welcome to NSML!</span>
 </pre></div>
 </div>
+</div></blockquote>
+</div>
+<div class="section" id="path-registration">
+<h2>Path registration<a class="headerlink" href="#path-registration" title="제목 주소">¶</a></h2>
+<blockquote>
+<div><p>다양한 위치에서 nsml을 실행하기 위해서 path 설정을 해주는 것을 권장합니다.
+nsml login을 실행했을 때 다음과 같은 오류 메시지가 뜨는 경우가 발생하는 경우에도 Path 설정을 해주어야 합니다.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">-bash: nsml: command not found</span>
+</pre></div>
+</div>
+<p>path 설정법을 알아보겠습니다. 먼저 nsml 실행파일이 있는 폴더에 들어간 뒤, pwd를 입력하고 나온 path를 복사합니다.
+pwd로 <code class="docutils literal notranslate"><span class="pre">/Users/user/Documents/nsml_client.darwin.amd64.hack</span></code> 가 나왔다고 가정합니다.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">pwd</span>
+<span class="go">/Users/user/Documents/nsml_client.darwin.amd64.hack</span>
+</pre></div>
+</div>
+<p>그리고 <code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PATH=$PATH:</span></code> 명령어 뒤에 pwd에서 나온 path를 붙여주고 명령어를 실행합니다.
+<code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">PATH=$PATH:[pwd</span> <span class="pre">path]</span></code> 형식입니다.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:/Users/user/Documents/nsml_client.darwin.amd64.hack
+<span class="gp">$</span>
+</pre></div>
+</div>
+<p>경로 설정이 완료되면 어떤 path 상에서도 nsml login이 가능합니다.</p>
 </div></blockquote>
 </div>
 <div class="section" id="run-a-session">

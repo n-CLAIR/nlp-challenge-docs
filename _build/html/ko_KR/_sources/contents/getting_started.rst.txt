@@ -59,6 +59,34 @@ Login
         GitHub Password: **********
         INFO[2018/11/19 12:33:42.355] Welcome to NSML!
 
+Path registration
+------------------
+
+    다양한 위치에서 nsml을 실행하기 위해서 path 설정을 해주는 것을 권장합니다.
+    nsml login을 실행했을 때 다음과 같은 오류 메시지가 뜨는 경우가 발생하는 경우에도 Path 설정을 해주어야 합니다.
+
+    .. code-block:: console
+
+        -bash: nsml: command not found
+
+
+    path 설정법을 알아보겠습니다. 먼저 nsml 실행파일이 있는 폴더에 들어간 뒤, pwd를 입력하고 나온 path를 복사합니다.
+    pwd로 ``/Users/user/Documents/nsml_client.darwin.amd64.hack`` 가 나왔다고 가정합니다.
+
+    .. code-block:: console
+
+        $ pwd
+        /Users/user/Documents/nsml_client.darwin.amd64.hack
+
+    그리고 ``export PATH=$PATH:`` 명령어 뒤에 pwd에서 나온 path를 붙여주고 명령어를 실행합니다.
+    ``export PATH=$PATH:[pwd path]`` 형식입니다.
+
+    .. code-block:: console
+
+        $ export PATH=$PATH:/Users/user/Documents/nsml_client.darwin.amd64.hack
+        $
+
+    경로 설정이 완료되면 어떤 path 상에서도 nsml login이 가능합니다.
 
 
 Run a session

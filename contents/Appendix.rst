@@ -1,5 +1,5 @@
 Appendix
-========
+=========
 
 .. toctree::
     :maxdepth: 1
@@ -23,4 +23,19 @@ Notification
 Policy
 ------
 
-    - 한 유저가 동시에 실행 가능한 GPU의 최대 개수는 credit에 따라 달라집니다.
+    한 유저가 동시에 실행 가능한 GPU의 최대 개수는 남은 credit에 따라 달라집니다.
+
+    **<credit 제공 규칙>**
+      팀에게 1시간 단위로 60 credit씩 주어지고, 최대치로 4320 credit까지 제공합니다. 따라서 4320 credit이 max로 채워지면 더 이상 credit이 주어지지 않습니다.
+
+
+
+    **<credit 사용 규칙>**
+      1분에 1 gpu를 사용할 경우 1 credit이 소모됩니다.
+
+      예)
+          - 1 gpu를 5분 동안 사용할 경우 : 5 credit 소모
+
+          - 3 gpu를 1분 동안 사용할 경우 : 3 credit 소모
+
+          - 3 gpu를 5분 동안 사용할 경우 : 15 credit 소모
