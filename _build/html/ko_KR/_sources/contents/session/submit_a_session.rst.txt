@@ -23,5 +23,5 @@ Submit a session
 
         .. py:attribute:: -t, --test
 
-            실제로 점수를 제출하기 전, 데이터의 포맷 오류나 기타 버그들을 찾기 위해 지원하는 debug 모드(test 모드)로 session 을 제출합니다. test 모드로 제출후 session 이 새로 생기면 :ref:`logs<nsml logs>` 를 보고
+            실제로 점수를 제출하기 전, 데이터의 포맷 오류나 기타 버그들을 찾기 위해 지원하는 debug 모드(test 모드)로 session 을 제출합니다. test 모드로 제출 후 session이 새로 생기면 :ref:`logs<nsml logs>` 를 보고
             debugging 을 할 수 있습니다.

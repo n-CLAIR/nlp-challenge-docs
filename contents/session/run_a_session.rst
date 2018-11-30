@@ -16,7 +16,7 @@ Run a session
         .. code-block:: console
 
             nsml run -d NER
-            
+
         해당되는 competition에 따라 -d 옵션을 설정하여 dataset을 꼭 지정해주셔야 합니다.(-d NER, -d SRL)
 
     Options:
@@ -25,7 +25,7 @@ Run a session
             세션이 실행될 때 사용할 dataset 을 선택합니다. string 타입으로 지정합니다.
         .. py:attribute:: -g, --gpus
 
-            할당받을 gpu 의 갯수를 입력합니다. ex) nsml run -g 4
+            할당받을 gpu 의 갯수를 입력합니다. cpu로만 training하고 싶으면 옵션을 -g 0으로 설정합니다. ex) nsml run -g 4
         .. py:attribute:: -i, --interactive
 
             interactive 모드로 세션을 실행하면, 세션의 훈련이 다 끝난 뒤에 세션은 자동으로 삭제됩니다.
