@@ -4,11 +4,11 @@ list models
 -------------
 
     Usage:
+        +------------------------------------------+
+        | **nsml model ls** *Options* SESSION_NAME |
+        +------------------------------------------+
 
-        .. code-block:: console
-
-            nsml model ls [Options] SESSION
-
+    Description:
         session에서 생성된 model을 확인합니다.
 
     Example:
@@ -17,6 +17,4 @@ list models
             nsml model ls -j nsmlteam/NER/4
 
     Options:
-        .. py:attribute:: -j, --json-return
-
-            json format 으로 출력합니다.
+        -j, --json-return       json format 으로 출력합니다.

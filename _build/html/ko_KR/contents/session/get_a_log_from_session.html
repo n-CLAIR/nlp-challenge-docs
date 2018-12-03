@@ -185,23 +185,33 @@
 <blockquote>
 <div><dl class="docutils">
 <dt>Usage:</dt>
-<dd><div class="first highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml logs [Options] SESSION</span>
-</pre></div>
-</div>
-<p class="last">session 에서 만들어진 log 를 보여줍니다.</p>
+<dd><table border="1" class="first last docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>nsml logs</strong> <em>Options</em> SESSION_NAME</td>
+</tr>
+</tbody>
+</table>
 </dd>
+<dt>Description:</dt>
+<dd>session 에서 만들어진 log 를 보여줍니다.</dd>
 <dt>Example:</dt>
 <dd><div class="first last highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml logs -f nsmlteam/NER/4</span>
 </pre></div>
 </div>
 </dd>
 <dt>Options:</dt>
-<dd><dl class="first last attribute">
-<dt>
-<code class="descname">-f, --follow</code></dt>
-<dd><p>session 이 종료될 때까지 log 를 streaming 합니다.</p>
-</dd></dl>
-
+<dd><table class="first last docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-f</span>, <span class="option">--follow</span></kbd></td>
+<td>session 이 종료될 때까지 log 를 streaming 합니다.</td></tr>
+</tbody>
+</table>
 </dd>
 </dl>
 </div></blockquote>

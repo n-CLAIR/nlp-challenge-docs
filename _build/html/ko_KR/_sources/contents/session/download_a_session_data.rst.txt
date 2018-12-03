@@ -4,20 +4,17 @@ Download a session data
 -----------------------
 
     Usage:
-        .. code-block:: console
+        +-------------------------------------------------+
+        | **nsml download** *Options* SESSION_NAME *PATH* |
+        +-------------------------------------------------+
 
-            nsml download [Options] SESSION PATH
-
+    Description:
         session 이 진행되면서 만들어 output 파일들을 local로 다운로드 받습니다.
 
     Options:
-        .. py:attribute:: -f, --file
+        -f, --file      1개의 파일 또는 directory 를 가져옵니다.
 
-            1개의 파일 또는 directory 를 가져옵니다.
-
-        .. py:attribute:: --overwrite
-
-            directory 가 있다면 덮어씁니다.
+        --overwrite     directory 가 있다면 덮어씁니다.
 
         .. note:: -f 로 파일을 가져올 경우, '/app/'의 경로를 붙여주셔야 합니다.
 

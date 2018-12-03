@@ -4,10 +4,11 @@ Delete a model
 --------------
 
     Usage:
-        .. code-block:: console
+        +-----------------------------------------------+
+        | **nsml model rm** SESSION_NAME *CHECKPOINT*   |
+        +-----------------------------------------------+
 
-            nsml model rm [Options] SESSION CHECKPOINT
-
+    Description:
         하나 또는 여러 개의 model 을 삭제합니다. 생성된 CHECKPOINT 번호를 입력합니다. 정규식의 * 와 ? 를 이용하면 여러 개의 model을 삭제할 수 있습니다.
 
     Example:

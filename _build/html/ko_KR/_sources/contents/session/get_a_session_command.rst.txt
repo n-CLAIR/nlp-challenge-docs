@@ -5,8 +5,9 @@ Get a session command
 ---------------------
 
     Usage:
-        .. code-block:: console
+        +---------------------------------+
+        | **nsml command** SESSION_NAME   |
+        +---------------------------------+
 
-            nsml command SESSION
-
+    Description:
         실행된 session 의 command 를 가져옵니다.

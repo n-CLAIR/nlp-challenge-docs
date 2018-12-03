@@ -4,10 +4,11 @@ Fork a session
 --------------
 
     Usage:
-        .. code-block:: console
+        +--------------------------------------+
+        | **nsml fork** *Options* SESSION_NAME |
+        +--------------------------------------+
 
-            nsml fork [Options] SESSION
-
+    Description:
         session 을 fork 해서 새로운 세션으로 재생성합니다.
 
         .. note:: fork 가 제대로 동작하려면, 다음의 조건을 만족해야 합니다.
@@ -24,27 +25,22 @@ Fork a session
             nsml fork -v nsmlteam/NER/4
 
     Options:
+        -a, --args                  새로운 session 에 전달할 arguments 입니다.
 
-        .. py:attribute:: -a, --args
+                                    ex) nsml fork -a "--batch=1000, --lr=0.02" SESSION_NAME
 
-            새로운 session 에 전달할 arguments 입니다. ex) nsml fork -a "--batch=1000, --lr=0.02" SESSION
+        -c, --checkpoint            fork한 세션에서 불러올 모델의 checkpoint 를 지정합니다.
 
-        .. py:attribute:: -c, --checkpoint
+                                    ex) nsml fork -c 15 SESSION_NAME
 
-            fork한 세션에서 불러올 모델의 checkpoint 를 지정합니다. ex) nsml fork -c 15 SESSION
+        -g, --gpus                  할당받을 gpu 의 갯수를 입력합니다.
 
-        .. py:attribute:: -g, --gpus
+                                    ex) nsml fork -g 4 SESSION_NAME
+                                    
+        --shm-size string           필요한 share memory 사이즈입니다. (default '1G')
 
-            할당받을 gpu 의 갯수를 입력합니다. ex) nsml fork -g 4 SESSION
+        --memory string             필요한 memory 사이즈입니다. (default '24G')
 
-        .. py:attribute:: --cpu
+        --cpu                       사용할 cpu 갯수입니다. (default 2)
 
-            사용할 cpu 갯수입니다. (default 2) ex) nsml fork --cpu 4 SESSION
-
-        .. py:attribute:: --memory
-
-            필요한 memory 사이즈입니다. (default '24G')
-
-        .. py:attribute:: --shm-size
-
-            필요한 share memory 사이즈입니다. (default '1G')
+                                    ex) nsml fork --cpu 4 SESSION_NAME

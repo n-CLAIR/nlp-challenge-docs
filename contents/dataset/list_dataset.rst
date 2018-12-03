@@ -3,19 +3,28 @@
 List dataset
 ------------
 
+    .. <br />
+
     Usage:
-        .. code-block:: console
+      +--------------------------------+
+      | **nsml dataset ls** *Options*  |
+      +--------------------------------+
 
-            nsml dataset ls [Options]
+    .. <br />
 
+    Description:
         NSML에 등록된 모든 데이터셋의 이름, 크기, 올린 사람을 보여줍니다.
+
+    .. <br />
+    .. <br />
 
     Example:
         .. code-block:: console
 
             nsml dataset ls -j
 
-    Options:
-        .. py:attribute:: -j, --json-return
+    .. <br />
+    .. <br />
 
-            json 형식으로 보여줍니다.
+    Options:
+        -j, --json-return       json 형식으로 보여줍니다.

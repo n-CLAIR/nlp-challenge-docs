@@ -5,8 +5,9 @@ Access to a session for repl
 ----------------------------
 
     Usage:
-        .. code-block:: console
+      +--------------------------------------+
+      | **nsml exec** SESSION_NAME [ARGS]... |
+      +--------------------------------------+
 
-            nsml exec [Options] SESSION [ARGS]...
-
+    Description:
         실행중인 session 에 REPL 로 접근합니다.

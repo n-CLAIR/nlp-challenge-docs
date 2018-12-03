@@ -185,29 +185,36 @@
 <blockquote>
 <div><dl class="docutils">
 <dt>Usage:</dt>
-<dd><div class="first highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml pull [Options] SESSION PATH</span>
-</pre></div>
-</div>
-<p class="last"><a class="reference internal" href="run_a_session.html#nsml-run"><span class="std std-ref">nsml run</span></a> 하였을 때 upload 된 session 파일들을 local machine 으로 가져옵니다.</p>
+<dd><table border="1" class="first last docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>nsml pull</strong> <em>Options</em> SESSION_NAME <em>PATH</em></td>
+</tr>
+</tbody>
+</table>
 </dd>
+<dt>Description:</dt>
+<dd><a class="reference internal" href="run_a_session.html#nsml-run"><span class="std std-ref">nsml run</span></a> 하였을 때 upload 된 session 파일들을 local machine 으로 가져옵니다.</dd>
 <dt>Example:</dt>
 <dd><div class="first last highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml pull -v nsmlteam/NER/4 ./</span>
 </pre></div>
 </div>
 </dd>
 <dt>Options:</dt>
-<dd><dl class="first attribute">
-<dt>
-<code class="descname">-v, --verbose</code></dt>
-<dd><p>상세한 진행과정을 표시합니다.</p>
-</dd></dl>
-
-<dl class="last attribute">
-<dt>
-<code class="descname">-f, --force</code></dt>
-<dd><p>로컬 path 에 folder 가 있으면 지우고 덮어씁니다.</p>
-</dd></dl>
-
+<dd><table class="first last docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-v</span>, <span class="option">--verbose</span></kbd></td>
+<td>상세한 진행과정을 표시합니다.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-f</span>, <span class="option">--force</span></kbd></td>
+<td>로컬 path 에 folder 가 있으면 지우고 덮어씁니다.</td></tr>
+</tbody>
+</table>
 </dd>
 </dl>
 </div></blockquote>

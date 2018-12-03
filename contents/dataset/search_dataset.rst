@@ -3,14 +3,23 @@
 Search dataset
 --------------
 
+    .. <br />
+
     Usage:
-        .. code-block:: console
+        +-----------------------------------------+
+        | **nsml dataset search** *DATASET_NAME*  |
+        +-----------------------------------------+
 
-            nsml dataset search [Options] NAME
+    .. <br />
 
+    Description:
         NSML에 등록된 데이터셋을 이름으로 찾아줍니다.
+
+    .. <br />
+    .. <br />
 
     Example:
         .. code-block:: console
 
-            nsml dataset search -j
+            nsml dataset search NER
+            nsml dataset search SRL

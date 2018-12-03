@@ -5,10 +5,11 @@ Get a log from session
 ----------------------
 
     Usage:
-        .. code-block:: console
+        +------------------------------------------+
+        | **nsml logs** *Options* SESSION_NAME     |
+        +------------------------------------------+
 
-            nsml logs [Options] SESSION
-
+    Description:
         session 에서 만들어진 log 를 보여줍니다.
 
     Example:
@@ -17,6 +18,4 @@ Get a log from session
             nsml logs -f nsmlteam/NER/4
 
     Options:
-        .. py:attribute:: -f, --follow
-
-            session 이 종료될 때까지 log 를 streaming 합니다.
+        -f, --follow        session 이 종료될 때까지 log 를 streaming 합니다.

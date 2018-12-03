@@ -139,4 +139,4 @@ Run a session
         Session nsmlteam/hello_nsml/1 is started
 
 
-    지금까지 NSML의 기본 사용법을 알아보았습니다.  다음 세션부터는 NSML에서 사용하는 명령어들을 알아보실 수 있습니다.
+    지금까지 NSML의 기본 사용법을 알아보았습니다.  다음 파트부터는 NSML에서 사용하는 명령어들을 알아보겠습니다.

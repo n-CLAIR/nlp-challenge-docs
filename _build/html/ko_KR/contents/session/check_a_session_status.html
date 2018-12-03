@@ -185,47 +185,50 @@
 <blockquote>
 <div><dl class="docutils">
 <dt>Usage:</dt>
-<dd><div class="first highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml ps [Options]</span>
-</pre></div>
-</div>
-<p class="last">session 들의 목록을 보여줍니다.</p>
+<dd><table border="1" class="first last docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>nsml ps</strong> <em>Options</em></td>
+</tr>
+</tbody>
+</table>
 </dd>
+<dt>Description:</dt>
+<dd>session 들의 목록을 보여줍니다.</dd>
 <dt>Example:</dt>
 <dd><div class="first last highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml ps -n 10</span>
 </pre></div>
 </div>
 </dd>
 <dt>Options:</dt>
-<dd><dl class="first attribute">
-<dt>
-<code class="descname">-n, --last</code></dt>
-<dd><p>가장 최근 생성된 n 개의 session 들을 보여줍니다.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt>
-<code class="descname">-a, --all</code></dt>
-<dd><p>종료된 session 까지 포함하여 보여줍니다.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt>
-<code class="descname">-j, --json-return</code></dt>
-<dd><p>json format 으로 출력합니다.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt>
-<code class="descname">-d, --data</code></dt>
-<dd><p>session 을 dataset 으로 filtering 하여 보여줍니다. ex) nsml ps -d NER</p>
-</dd></dl>
-
-<dl class="last attribute">
-<dt>
-<code class="descname">-s, --search</code></dt>
-<dd><p>해당하는 session 만 보여줍니다. ex) nsml ps -s SESSION</p>
-</dd></dl>
-
+<dd><table class="first last docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-n</span>, <span class="option">--last <var>string_or_integer</var></span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>가장 최근 생성된 n 개의 session 들을 보여줍니다.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-a</span>, <span class="option">--all</span></kbd></td>
+<td>종료된 session 까지 포함하여 보여줍니다.</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-j</span>, <span class="option">--json-return</span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td>json format 으로 출력합니다.</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd><span class="option">-d</span>, <span class="option">--data <var>dataset</var></span></kbd></td>
+</tr>
+<tr><td>&#160;</td><td><p class="first">Session 을 dataset으로 filtering하여 보여줍니다.</p>
+<p class="last">ex) nsml ps -d NER</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">-s</span>, <span class="option">--search</span></kbd></td>
+<td>해당하는 session만 보여줍니다. ex) nsml ps -s SESSION</td></tr>
+</tbody>
+</table>
 </dd>
 </dl>
 </div></blockquote>

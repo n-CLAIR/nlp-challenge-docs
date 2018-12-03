@@ -185,24 +185,31 @@
 <blockquote>
 <div><dl class="docutils">
 <dt>Usage:</dt>
-<dd><div class="first highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml download [Options] SESSION PATH</span>
-</pre></div>
-</div>
-<p class="last">session 이 진행되면서 만들어 output 파일들을 local로 다운로드 받습니다.</p>
+<dd><table border="1" class="first last docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>nsml download</strong> <em>Options</em> SESSION_NAME <em>PATH</em></td>
+</tr>
+</tbody>
+</table>
 </dd>
+<dt>Description:</dt>
+<dd>session 이 진행되면서 만들어 output 파일들을 local로 다운로드 받습니다.</dd>
 <dt>Options:</dt>
-<dd><dl class="first attribute">
-<dt>
-<code class="descname">-f, --file</code></dt>
-<dd><p>1개의 파일 또는 directory 를 가져옵니다.</p>
-</dd></dl>
-
-<dl class="attribute">
-<dt>
-<code class="descname">--overwrite</code></dt>
-<dd><p>directory 가 있다면 덮어씁니다.</p>
-</dd></dl>
-
+<dd><table class="first docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-f</span>, <span class="option">--file</span></kbd></td>
+<td>1개의 파일 또는 directory 를 가져옵니다.</td></tr>
+<tr><td class="option-group">
+<kbd><span class="option">--overwrite</span></kbd></td>
+<td>directory 가 있다면 덮어씁니다.</td></tr>
+</tbody>
+</table>
 <div class="admonition note">
 <p class="first admonition-title">주석</p>
 <p>-f 로 파일을 가져올 경우, '/app/'의 경로를 붙여주셔야 합니다.</p>
