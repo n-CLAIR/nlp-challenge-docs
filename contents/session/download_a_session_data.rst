@@ -20,7 +20,7 @@ Download a session data
 
             .. code-block:: console
 
-                nsml download SESSION PATH -s '/app/main.py'
+                nsml download SESSION_NAME PATH -s '/app/main.py'
 
         .. warning:: file 이름이나 path 에 아래에 기입된 문자 외에 다른 문자가 있을 경우 에러가 납니다.
 
