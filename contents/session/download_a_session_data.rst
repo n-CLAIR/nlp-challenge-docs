@@ -9,12 +9,12 @@ Download a session data
         +-------------------------------------------------+
 
     Description:
-        session 이 진행되면서 만들어 output 파일들을 local로 다운로드 받습니다.
+        session 이 진행되면서 만들어진 output 파일들을 local로 다운로드 받습니다.
 
     Options:
         -s, --single    1개의 파일 또는 directory 를 가져옵니다.
 
-        -f, --force     directory 가 있다면 덮어씁니다.
+        -f, --force     이미 해당 경로에 같은 이름의 파일이 존재한다면 덮어씁니다.
 
         .. note:: -s 로 파일을 가져올 경우, '/app/'의 경로를 붙여주셔야 합니다.
 
