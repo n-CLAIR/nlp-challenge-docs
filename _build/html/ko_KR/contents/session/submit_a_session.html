@@ -185,9 +185,15 @@
 <blockquote>
 <div><dl class="docutils">
 <dt>Usage:</dt>
-<dd><div class="first highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">nsml submit [Options] SESSION CHECKPOINT</span>
-</pre></div>
-</div>
+<dd><table border="1" class="first docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>nsml submit</strong> <em>Options</em> SESSION_NAME <em>CHECKPOINT</em></td>
+</tr>
+</tbody>
+</table>
 <p class="last">session 을 submit 하여서 leaderboard 에 점수를 제출합니다. 하루에 submit 횟수는 제한이 없습니다. 다만 submit을 한 번 했다면 1시간 후에 다시 submit이 가능합니다. 즉, submit 시간 간격은 1시간이 넘어야 합니다. (단, -t 옵션을 사용하는 submit은 submit 시간 간격 카운트에 포함되지 않습니다.)</p>
 </dd>
 <dt>Example:</dt>
@@ -201,13 +207,19 @@
 </dl>
 <p>Options:</p>
 <blockquote>
-<div><dl class="attribute">
-<dt>
-<code class="descname">-t, --test</code></dt>
-<dd><p>실제로 점수를 제출하기 전, 데이터의 포맷 오류나 기타 버그들을 찾기 위해 지원하는 debug 모드(test 모드)로 session 을 제출합니다. test 모드로 제출 후 session이 새로 생기면 <a class="reference internal" href="get_a_log_from_session.html#nsml-logs"><span class="std std-ref">logs</span></a> 를 보고
-debugging 을 할 수 있습니다.</p>
-</dd></dl>
-
+<div><table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd><span class="option">-t</span>, <span class="option">--test</span></kbd></td>
+<td><p class="first">실제로 점수를 제출하기 전, 데이터의 포맷 오류나 기타 버그들을 찾기 위해</p>
+<p>지원하는 debug 모드(test 모드)로 session 을 제출합니다.</p>
+<p>test 모드로 제출 후 session이 새로 생기면 <a class="reference internal" href="get_a_log_from_session.html#nsml-logs"><span class="std std-ref">logs</span></a> 를 보고</p>
+<p class="last">debugging 을 할 수 있습니다.</p>
+</td></tr>
+</tbody>
+</table>
 </div></blockquote>
 </div></blockquote>
 </div>
